@@ -1,15 +1,18 @@
+// src/widgets/home/HomeHero.tsx
 import React from "react";
+import { messages } from "../../shared/config/i18n";
+import { useLanguage } from "../../shared/context/LanguageContext";
 
 export const HomeHero: React.FC = () => {
+    const { language } = useLanguage();
+    const t = messages[language].home;
+
     return (
         <section className="hero">
             <div className="container hero-inner">
                 <div>
-                    <h1>Simple Web UI Mock</h1>
-                    <p>
-                        상단에 탭 5개가 있는 기본 웹 페이지 레이아웃입니다.
-                        이 구조를 기반으로 React + TypeScript로 쉽게 확장할 수 있습니다.
-                    </p>
+                    <h1>{t.heroTitle}</h1>
+                    <p>{t.heroDescription}</p>
                     <div className="hero-actions">
                         <button className="btn-primary">Get Started</button>
                         <button className="btn-ghost">Learn More</button>

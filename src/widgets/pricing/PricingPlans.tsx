@@ -1,22 +1,24 @@
 // src/widgets/pricing/PricingPlans.tsx
 import React from "react";
+import { messages } from "../../shared/config/i18n";
+import { useLanguage } from "../../shared/context/LanguageContext";
 
 export const PricingPlans: React.FC = () => {
+    const { language } = useLanguage();
+
+    const t = messages[language].pricing;
+
     return (
         <section className="section section-muted">
             <div className="container">
-                <h2 className="section-title">Pricing</h2>
-                <p className="section-subtitle">
-                    아직 구체적인 플랜은 준비 중입니다. 나중에 요금 플랜 정보를 여기에
-                    추가할 수 있습니다.
-                </p>
+                {/* 다국어 적용된 타이틀/서브타이틀 */}
+                <h2 className="section-title">{t.title}</h2>
+                <p className="section-subtitle">{t.subtitle}</p>
 
                 <div className="pricing-grid">
                     <article className="card pricing-card">
-                        <h3>Coming soon</h3>
-                        <p className="pricing-description">
-                            이 영역은 요금 플랜, 서비스 플랜 등을 보여주기 위한 자리입니다.
-                        </p>
+                        <h3>{t.comingSoonTitle}</h3>
+                        <p className="pricing-description">{t.comingSoonDescription}</p>
                     </article>
                 </div>
             </div>

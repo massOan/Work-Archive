@@ -8,8 +8,7 @@ import { ProductsPage } from "../pages/ProductsPage";
 import { PricingPage } from "../pages/PricingPage";
 import { BlogPage } from "../pages/BlogPage";
 import { ContactPage } from "../pages/ContactPage";
-import { Language } from "../shared/config/i18n";
-
+import { LanguageProvider } from "../shared/context/LanguageContext";
 
 const App: React.FC = () => {
   const [activeTabId, setActiveTabId] = useState<TabId>(DEFAULT_TAB_ID);
@@ -32,11 +31,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="page">
-      <Header activeTabId={activeTabId} onTabChange={setActiveTabId} />
-      <main>{renderPage()}</main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="page">
+        <Header activeTabId={activeTabId} onTabChange={setActiveTabId} />
+        <main>{renderPage()}</main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 };
 
