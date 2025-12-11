@@ -399,3 +399,62 @@ main {
     box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
     transform: translateY(-0.5px);
 }
+
+/* 공통 모달 스타일 */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.modal {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 24px 18px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal-description {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.modal-close {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-body {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+}
