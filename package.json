@@ -1,7 +1,8 @@
 {
-  "name": "around-hub-react-typescript",
-  "version": "1.0.0",
+  "name": "React-TypeScriptSample",
+  "version": "0.1.0",
   "private": true,
+  "homepage": "https://massOan.github.io/React-TypeScriptSample",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.7.4"
   },
   "description": "",
