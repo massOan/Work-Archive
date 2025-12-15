@@ -30,8 +30,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
     const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
     const footer = (
-        <button type="button" className="btn-ghost" onClick={onClose}>
-            {language === "ko" ? "닫기" : "閉じる"}
+        <button type="button" >
         </button>
     );
 

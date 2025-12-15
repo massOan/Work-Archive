@@ -871,3 +871,78 @@ y .modal-footer {
         transform: translate(-12px, -4px) scale(1.05);
     }
 }
+
+
+/* ===== Skeleton ===== */
+.status-row {
+    min-height: 20px;
+    /* 로딩/에러/카운트 자리 고정 */
+    margin-bottom: 8px;
+}
+
+.skeleton-card {
+    pointer-events: none;
+}
+
+.skeleton-card:hover {
+    transform: none !important;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06) !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+}
+
+.skeleton-line {
+    height: 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #eef2f7 25%, #e5e7eb 37%, #eef2f7 63%);
+    background-size: 400% 100%;
+    animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+.skeleton-title {
+    height: 18px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.skeleton-meta {
+    height: 12px;
+    margin-bottom: 8px;
+    width: 45%;
+}
+
+.skeleton-text {
+    height: 12px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.skeleton-text.short {
+    width: 85%;
+}
+
+.skeleton-pill-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.skeleton-pill {
+    width: 60px;
+    height: 20px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #eef2f7 25%, #e5e7eb 37%, #eef2f7 63%);
+    background-size: 400% 100%;
+    animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes skeletonShimmer {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
