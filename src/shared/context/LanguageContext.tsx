@@ -18,7 +18,7 @@ type LanguageProviderProps = {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({
     children,
 }) => {
-    const [language, setLanguage] = useState<Language>("ko"); // 기본값: 한국어
+    const [language, setLanguage] = useState<Language>("ja"); // 기본값: 일본어
 
     return (
         <LanguageContext.Provider value={{ language, setLanguage }}>
