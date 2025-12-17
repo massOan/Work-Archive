@@ -137,7 +137,6 @@ main {
     background-color: #f3f4ff;
 }
 
-/* Hero */
 .hero {
     background: radial-gradient(circle at top, #e0e7ff, #eef2ff 40%, #f9fafb);
     padding: 64px 0;
@@ -161,7 +160,11 @@ main {
 
 /* Sections & cards */
 .section {
-    padding: 48px 0 64px;
+    padding: 48px 0 48px;
+}
+
+.section+.section {
+    padding-top: 0;
 }
 
 .section-muted {
