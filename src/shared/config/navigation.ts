@@ -1,4 +1,4 @@
-export type TabId = "home" | "products" | "pricing" | "blog" | "contact";
+export type TabId = "home" | "products" | "now" | "blog" | "contact";
 
 export type Tab = {
     id: TabId;
@@ -9,7 +9,7 @@ export type Tab = {
 export const TABS: Tab[] = [
     { id: "home", label: "Home", path: "/" },
     { id: "products", label: "Products", path: "/products" },
-    { id: "pricing", label: "Pricing", path: "/pricing" },
+    { id: "now", label: "Now", path: "/now" },
     { id: "blog", label: "Blog", path: "/blog" },
     { id: "contact", label: "Contact", path: "/contact" },
 ];

@@ -10,14 +10,14 @@ export const NAV_LABELS: Record<Language, Record<TabId, string>> = {
     ko: {
         home: "홈 / 소개",
         products: "프로젝트",
-        pricing: "강점 & 제공가치",
+        now: "사용할 수 있는 스킬",
         blog: "노트 / 블로그",
         contact: "연락처",
     },
     ja: {
         home: "ホーム / プロフィール",
         products: "プロジェクト",
-        pricing: "強み・提供価値",
+        now: "スキル",
         blog: "ノート / ブログ",
         contact: "お問い合わせ",
     },

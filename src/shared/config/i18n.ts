@@ -21,12 +21,9 @@ export const messages = {
             subtitle: "지금까지 참여했던 프로젝트를 정리했습니다. 프로젝트 카드를 누르면 상세하게 보여줍니다.",
             searchPlaceholder: "검색어를 입력하세요 (예: React, Mobile...)",
         },
-        pricing: {
-            title: "요금제",
-            subtitle: "실제 과금이 아니라, 포트폴리오용 예시 요금제 섹션입니다.",
-            comingSoonTitle: "준비 중입니다",
-            comingSoonDescription:
-                "요금 플랜, 서비스 플랜 등을 보여주기 위한 자리입니다. 나중에 실제 플랜 정보를 추가할 수 있습니다.",
+        now: {
+            title: "Skills",
+            subtitle: "기술 스택 및 경험을 확인하세요 - 카드를 클릭하여 상세 정보를 확인하세요",
         },
         blog: {
             title: "Blog / Notes",
@@ -68,12 +65,9 @@ export const messages = {
             subtitle: "これまでに参加したプロジェクトをまとめました。 プロジェクトカードを押すと、詳細に表示されます。",
             searchPlaceholder: "キーワードで検索（例: React, Mobile...）",
         },
-        pricing: {
-            title: "料金プラン",
-            subtitle: "実際の課金ではなく、ポートフォリオ用の料金セクション例です。",
-            comingSoonTitle: "準備中です",
-            comingSoonDescription:
-                "料金プランやサービスプランを表示するエリアです。後で実際のプラン情報を追加できます。",
+        now: {
+            title: "スキル",
+            subtitle: "技術スタックと経験をご確認ください - カードをクリックして詳細を確認",
         },
         blog: {
             title: "Blog / Notes",
