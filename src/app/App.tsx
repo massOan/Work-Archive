@@ -6,7 +6,6 @@ import { Footer } from "../widgets/footer/Footer";
 import { HomePage } from "../pages/HomePage";
 import { ProductsPage } from "../pages/ProductsPage";
 import { NowPage } from "../pages/NowPage";
-import { BlogPage } from "../pages/BlogPage";
 import { ContactPage } from "../pages/ContactPage";
 import { LanguageProvider } from "../shared/context/LanguageContext";
 import { IntroOverlay } from "../shared/ui/IntroOverlay";
@@ -29,7 +28,6 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/now" element={<NowPage />} />
-              <Route path="/blog" element={<BlogPage />} />
               <Route path="/contact" element={<ContactPage />} />
               {/* 잘못된 경로는 홈으로 리다이렉트 */}
               <Route path="*" element={<Navigate to="/" replace />} />
