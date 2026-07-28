@@ -12,7 +12,7 @@ export const messages = {
         home: {
             heroTitle: "Android × Web으로 가치를 만드는 개발자, 장익준입니다.",
             heroDescription:
-                "통신 영역의 Android 앱 개발을 약 3년간 담당해 왔으며, 항상 사용자의 시점에서 UI/UX를 고민하며 개발합니다. 현재는 React + TypeScript로 Web 프론트엔드를 확장하며 일본에서의 커리어를 준비하고 있습니다.",
+                "통신 영역의 Android 앱 개발을 약 3년간 담당해 왔으며, 항상 사용자의 시점에서 UI/UX를 고민하며 개발합니다. 현재는 React + TypeScript로 Web 프론트엔드까지 영역을 넓히며 일본에서 Android·Web 개발자로 근무하고 있습니다.",
             primaryCta: "프로젝트 보러가기",
             secondaryCta: "경력 요약 보기",
         },
@@ -56,7 +56,7 @@ export const messages = {
             heroTitle:
                 "Android × Web で価値を生み出すエンジニア、張 益準（チャン・イクジュン）です。",
             heroDescription:
-                "通信キャリア向けのAndroidアプリ開発を約3年担当してきました。常にユーザー視点でUI/UXを考えながら開発しています。現在はReact + TypeScriptでWebフロントにも取り組み、日本でのキャリアを目指して準備を進めています。",
+                "通信キャリア向けのAndroidアプリ開発を約3年担当してきました。常にユーザー視点でUI/UXを考えながら開発しています。現在はReact + TypeScriptでWebフロントにも取り組み、日本でAndroid・Webエンジニアとして勤務しています。",
             primaryCta: "プロジェクト一覧を見る",
             secondaryCta: "職務経歴の概要を見る",
         },
@@ -96,4 +96,3 @@ export const messages = {
         },
     },
 } as const;
-
