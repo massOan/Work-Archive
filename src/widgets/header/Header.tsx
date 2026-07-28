@@ -8,17 +8,15 @@ import type { TabId } from "../../shared/config/navigation";
 
 export const NAV_LABELS: Record<Language, Record<TabId, string>> = {
     ko: {
-        home: "홈 / 소개",
+        home: "홈",
         products: "프로젝트",
         now: "사용할 수 있는 스킬",
-        blog: "노트 / 블로그",
         contact: "연락처",
     },
     ja: {
-        home: "ホーム / プロフィール",
+        home: "ホーム",
         products: "プロジェクト",
         now: "スキル",
-        blog: "ノート / ブログ",
         contact: "お問い合わせ",
     },
 };
