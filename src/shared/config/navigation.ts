@@ -10,7 +10,6 @@ export const TABS: Tab[] = [
     { id: "home", label: "Home", path: "/" },
     { id: "products", label: "Products", path: "/products" },
     { id: "now", label: "Now", path: "/now" },
-    { id: "contact", label: "Contact", path: "/contact" },
 ];
 
 export const DEFAULT_TAB_ID: TabId = "home";
