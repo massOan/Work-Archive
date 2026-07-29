@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { messages } from "../../shared/config/i18n";
 import { useLanguage } from "../../shared/context/LanguageContext";
 
+const DEVELOPER_ILLUSTRATION_URL = `${process.env.PUBLIC_URL ?? ""}/assets/developer-illustration.png`;
+
 export const HomeHero: React.FC = () => {
     const { language } = useLanguage();
     const t = messages[language].home;
@@ -19,8 +21,8 @@ export const HomeHero: React.FC = () => {
     return (
         <section className="hero portfolio-hero">
             <div className="container hero-inner portfolio-hero-inner">
-                <div className="profile-avatar" aria-hidden="true">
-                    <span>IK</span>
+                <div className="profile-avatar">
+                    <img src={DEVELOPER_ILLUSTRATION_URL} alt="Developer illustration" />
                 </div>
 
                 <div className="hero-kicker">{location}</div>
