@@ -47,17 +47,30 @@ const FEATURES: Record<Language, Feature[]> = {
 
 export const HomeFeatures: React.FC = () => {
   const { language } = useLanguage();
-  const t = messages[language].home;
   const features = FEATURES[language];
 
   return (
-    <section className="section">
+    <section className="section portfolio-section">
       <div className="container">
+        <div className="section-heading centered-section-heading">
+          <h2 className="section-title">
+            {language === "ko" ? "핵심 역량" : "Core Strengths"}
+          </h2>
+          <p className="section-subtitle">
+            {language === "ko"
+              ? "현장에서 반복적으로 다뤄온 개발 영역을 포트폴리오 카드 형태로 정리했습니다."
+              : "A portfolio-style summary of the areas I have repeatedly handled in production."}
+          </p>
+        </div>
 
-        <div className="card-grid">
-          {features.map((feature) => (
-            <article key={feature.title} className="card">
+        <div className="portfolio-card-grid">
+          {features.map((feature, index) => (
+            <article key={feature.title} className="card portfolio-skill-card">
+              <div className="skill-mark" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </div>
               <h3>{feature.title}</h3>
+              <div className="skill-meta">{feature.meta}</div>
               <p>{feature.description}</p>
             </article>
           ))}
